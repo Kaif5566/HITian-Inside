@@ -1,0 +1,683 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: rgb(255 205 206);
+    font-family: 'Tilt Neon', cursive;
+}
+
+
+/* navigation bar styling */
+.navbar {
+    position: fixed;
+    margin-top: 1em;
+    width: 100vw;
+    height: 10vh;
+}
+.logo {
+    background-color: rgb(255, 174, 176);
+    margin-left: -1em;
+    margin-top: -7em;
+    margin-bottom: 1em;
+    margin-right: 1.4em;
+    height: 5.8em;
+}
+.logo p {
+    display: inline-block;
+    margin-top: -0.5em;
+    margin-left: 1em;
+}
+.logo img {
+    display: flex;
+    width: 3em;
+    height: 3em;
+    margin-left: 2em;
+    padding-top: 1.5em;
+}
+.items ul {
+    display: flex;
+    float: right;
+    margin-top: -5em;
+    padding: 1em 3em;
+    list-style-type: none;
+    margin-right: 2em;
+    flex-wrap: wrap;
+}
+.items ul li {
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+}
+.items ul li a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+.items ul li a:hover {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+.items ul li a:focus {
+    background-color: maroon;
+    color: rgb(255, 174, 176);
+    border-radius: 12px;
+}
+
+
+/* home section styling */
+.home {
+    margin-top: 5em;
+}
+.bgimage img {
+    width: 101vw;
+    height: 54em;
+    margin-left: -1em;
+}
+.home_contents {
+    margin-top: -44em;
+    margin-left: -24em;
+}
+.home_contents .paragraph1 .lines p {
+    display: inline-block;
+    position: relative;
+    word-spacing: 2px;
+    width: 42em;
+    margin: auto;
+    font-size: 1.5em;
+    color: black;
+    margin-left: 18em;
+    display: flex;
+}
+.home_contents .paragraph1 #line1 p {
+    color: black;
+    margin-left: 18em;
+}
+.paragraph1 #line2 p {
+    margin-left: 16.5em;
+}
+.home_contents .headline {
+    font-size: 4em;
+}
+.home_contents p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .btn button {
+    width: 8.5em;
+    height: 3em;
+    background-color: maroon;
+    color: rgb(255 205 206);
+    border-radius: 17px;
+    border: none;
+    margin-left: 38em;
+    margin-top: 2em;
+}
+.home .btn button:hover {
+    background-color: rgb(237, 63, 66);
+}
+.home .btn button a {
+    text-decoration: none;
+    color: rgb(255 205 206);
+}
+
+
+/* about section styling */
+.about {
+    width: 100.45vw;
+    height: 100vh;
+    margin-top: 20.5em;
+    padding-top: 1em;
+    margin-left: -0.5em;
+    background-color: #920404;
+}
+.about .images {
+    width: 10em;
+    height: 10em;
+}
+.about #image1 {
+    margin: 9em 12em;
+}
+.about #image2 {
+    margin: -12em 2em;
+}
+.about #image3 {
+    margin: 1em 21em;
+}
+.about #image4 {
+    margin: 0em 12em;
+}
+.about #image5 {
+    margin: -20.2em 11em;
+    width: 12em;
+    height: 12em;
+}
+.about .images img {
+    width: 10em;
+    height: 10em;
+}
+.about #image5 img {
+    width: 12em;
+    height: 12em;
+}
+.about #image1 img,
+#image2 img,
+#image3 img,
+#image4 img {
+    width: 15em;
+    height: 10em;
+}
+.about #image1 img,
+#image5 img,
+#image2 img {
+    border-radius: 10px;
+}
+.about #image3 img {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.about #image4 img {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.about-headline p,
+.about-headline .paragraph2 .lines p {
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about-headline p {
+    display: inline-block;
+    width: auto;
+    font-size: 3em;
+    color: rgb(255 205 206);
+    margin-left: 20em;
+}
+.lines p {
+    display: block;
+    width: 37em;
+    margin: auto;
+    margin-left: 26em;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255 205 206);
+    font-size: 1.5em;
+}
+.paragraph2 #line2 p {
+    display: block;
+    float: right;
+    width: 34em;
+    margin: auto;
+    margin-right: 3em;
+}
+.paragraph2 #line3 p {
+    display: block;
+    float: right;
+    width: 34em;
+    margin: auto;
+    margin-right: 3em;
+}
+.paragraph2 #line2 p,
+#line3 p {
+    text-align: center;
+}
+.paragraph2 button {
+    width: 8.5em;
+    height: 3em;
+    background-color: rgb(255 205 206);
+    border-radius: 17px;
+    border: none;
+    float: right;
+    margin-right: -36em;
+    margin-top: 5em;
+}
+.paragraph2 button:hover {
+    background-color: rgb(244, 107, 109);
+}
+.paragraph2 .btn button a {
+    text-decoration: none;
+    color: maroon;
+}
+.paragraph2 .btn button a:hover {
+    color: maroon;
+}
+
+
+/* Gallery section styling */
+.gallery {
+    width: 100vw;
+    height: 100vh;
+}
+.gallery-image img {
+    position: relative;
+    display: flex;
+    width: 101vw;
+    height: 102vh;
+    margin-left: -1em;
+    z-index: -1;
+    opacity: 0.7;
+}
+.gallery-headline p {
+    display: block;
+    width: 4em;
+    margin: auto;
+    font-size: 5em;
+    margin-top: -7em;
+    z-index: 1;
+    color: white;
+}
+.paragraph3 .lines p {
+    float: right;
+    margin: 2em 2em;
+    margin-top: 3em;
+    color: white;
+}
+.paragraph3 .lines p {
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0em 9em;
+    color: white;
+    width: 57em;
+    font-size: 1.5em;
+}
+.paragraph3 #line1 p {
+    margin-top: 2em;
+}
+.paragraph3 #line1 p,
+#line2 p,
+#line3 p {
+    text-align: center;
+    width: 44em;
+}
+.paragraph3 .btn button {
+    width: 8em;
+    height: 3em;
+    background-color: rgb(255 205 206);
+    color: #920404;
+    border-radius: 20px;
+    border: none;
+    float: right;
+    margin-right: 54.5em;
+    margin-top: 2em;
+}
+.paragraph3 .btn button a {
+    text-decoration: none;
+    color: #920404;
+}
+.paragraph3 .btn button:hover {
+    background-color: maroon;
+    color: rgb(255 205 206);
+}
+.paragraph3 .btn button a:hover {
+    background-color: maroon;
+    color: rgb(255 205 206);
+}
+
+
+/* events section styling */
+.events {
+    width: 101vw;
+    height: 100vh;
+    margin-left: -1em;
+    background-color: #920404;
+}
+.containers {
+    width: 30em;
+    height: 30em;
+    border: 5px dotted rgb(255 205 206);
+    border-top-left-radius: 50px;
+    float: right;
+    margin-right: 6em;
+    margin-top: 9em;
+}
+.containers img {
+    position: relative;
+    width: 35em;
+    height: 35em;
+    opacity: 0.8;
+}
+.containers .boxes {
+    display: flex;
+    width: 13em;
+    height: 13em;
+    float: right;
+    margin: 2em 2em;
+}
+.containers #box1 {
+    margin: 2em 2em;
+}
+.containers #box2 {
+    margin: -2em 2em;
+}
+.containers #box3 {
+    margin: -2em -2em;
+}
+.containers #box4 {
+    margin: -23.9em 15em;
+}
+.containers .boxes img {
+    width: 13em;
+    height: 13em;
+}
+.box {
+    margin-top: -30em;
+}
+#box1 img {
+    border-top-right-radius: 40px;
+}
+#box3 img {
+    border-bottom-left-radius: 40px;
+}
+.events-headline p {
+    display: inline-block;
+    width: 4em;
+    font-size: 5em;
+    margin-left: 4.8em;
+    margin-top: 2em;
+    color: white;
+}
+.paragraph4 .lines {
+    display: flex;
+}
+.events-content .paragraph4 .lines p {
+    display: inline-block;
+    width: 43em;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    color: rgb(255 205 206);
+    font-size: 1.5em;
+}
+.paragraph4 {
+    margin: 2em 2em;
+}
+.paragraph4 #line1 {
+    margin-top: -4em;
+}
+.paragraph4 #line2 p {
+    margin-left: -2em;
+}
+.paragraph4 .btn button {
+    width: 8em;
+    height: 3em;
+    background-color: rgb(238, 117, 119);
+    border-radius: 20px;
+    border: none;
+    margin-left: 31em;
+    margin-top: 2em;
+}
+.paragraph4 .btn button:hover {
+    background-color: rgb(237, 63, 66);
+}
+.paragraph4 .btn button a {
+    text-decoration: none;
+    color: white;
+}
+.paragraph4 .btn button a:hover {
+    background-color: rgb(237, 63, 66);
+}
+
+
+/* merchandise section styling */
+.merchandise {
+    width: 101vw;
+    height: 100vh;
+    background-color: #920404;
+    margin-left: -1em;
+    color: rgb(255 205 206);
+}
+.merchandise-image {
+    margin: 0em 0em;
+}
+.merchandise-image .image1 img {
+    margin: 0em 1.9em;
+    border: 2px solid black;
+    width: 12em;
+    height: 11em;
+}
+.merchandise-image .image2 img {
+    display: flex;
+    margin: -11.4em 14.1em;
+    border: 2px solid black;
+    width: 9em;
+    height: 11em;
+}
+.merchandise-containers .video video {
+    display: flex;
+    width: 25em;
+    height: 12em;
+    margin-left: 0em;
+}
+.merchandise-contents {
+    margin-top: -27em;
+}
+.merchandise-contents .paragraph2 #line1{
+    width: 30em;
+}
+.merchandise-containers {
+    padding-top: 12em;
+    width: 25em;
+    height: 25em;
+    margin-left: 3em;
+    border-left: 5px dashed rgb(255 205 206);
+    border-bottom: 5px dashed rgb(255 205 206);
+    border-bottom-left-radius: 15px;
+}
+
+
+/* Contact us section styling */
+.contactus {
+    width: 96.8vw;
+    height: 100vh;
+    background: #920404;
+    margin-left: -1em;
+    padding:2em 2em ;
+}
+.container1{
+    background-color: rgb(238, 117, 119);
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    height: 32em;
+    margin: 8em 0em;
+    margin-left: 3em;
+    border-radius: 22px;
+}
+.container1 .headline{
+    display: inline-block;
+    width: 5em;
+    margin: auto;
+    color: white;
+    font-size: 3em;
+    margin-top: 2em;
+}
+.contact-contents .cline1 {
+    display: flex;
+    width: 9em;
+    margin: auto;
+    color: white;
+    font-size: 2em;
+    margin-top: -10em;
+}
+.contact-contents .cline2 {
+    display: flex;
+    width: 13em;
+    margin: auto;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 0.4em;
+}
+.container2 {
+    background-color: rgb(238, 117, 119);
+    opacity: 0.9;
+    display: flex;
+    float: right;
+    width: 40em;
+    height: 32em;
+    margin: -40em 0em;
+    margin-right: 5em;
+    border-radius: 22px;
+}
+input {
+    border: none;
+    border-radius: 8px;
+}
+.container2 .type1 input {
+    width: 32em;
+    height: 3em;
+    margin-left: 7em;
+    margin-top: 1.5em;
+}
+.container2 .type1 input[type=text] {
+    margin-left: 7em;
+    margin-top: 2em;
+}
+.container2 .type1 input[type=email] {
+    margin-top: 1em;
+}
+.container2 .type2 input {
+    text-align: top;
+    width: 32em;
+    height: 20em;
+    margin-left: 7em;
+    margin-top: 1em;
+}
+.form button {
+    width: 10.2em;
+    height: 1.8em;
+    background-color: #b93232;
+    color: white;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 12px;
+    margin-top: 1em;
+}
+.form button:hover {
+    background-color: #710303;
+    color: white;
+    font-size: 1.32em;
+}
+.form button[type=submit] {
+    margin-left: 4.5em;
+}
+
+
+/* icons styling */
+.icons{
+    margin-left: 10em;
+    margin-top: 1em;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 1em;
+    margin-left: 1em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.fa:hover {
+    opacity: 0.7;
+    padding: 1.5em;
+}
+.fa-facebook {
+    background: maroon;
+    color: white;
+    border-radius: 40px;
+}
+.fa-twitter {
+    background: maroon;
+    color: white;
+    border-radius: 40px;
+}
+.fa-instagram{
+    background: maroon;
+    color: white;
+    border-radius: 40px;
+}
+.fa-linkedin{
+    background: maroon;
+    color: white;
+    border-radius: 40px;
+}
+.fa-youtube {
+    background: maroon;
+    color: white;
+    border-radius: 40px;
+}
+.fa-pinterest{
+    background: maroon;
+    color: white;
+    border-radius: 40px;
+}
+.fa-google{
+    background: maroon;
+    color: white;
+    border-radius: 40px;
+}
+.fa-apple{
+    background: maroon;
+    color: white;
+    border-radius: 40px;
+}
+
+
+/* button transition styling */
+button:hover {
+    transition-property: text;
+    transition-property: background-color;
+    transition: all 0.2s ease-in-out;
+}
+button a {
+    transition: all 0.3s ease;
+}
+button a:hover {
+    font-size: 1.35em;
+}
+
+
+/* footer styling */
+footer{
+    width: 101vw;
+    height: 15em;
+    background-color: black;
+    color: rgb(255 205 206);
+    margin-left: -1em;
+    margin-top: -1em;
+    margin-bottom: -1em;
+}
+.fline1 .icons{
+    display: flex;
+    margin-left: 45em;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.fline1 .line{
+    display: flex;
+    width: 20em;
+    margin-left: 37.5em;
+    border: 2px solid white;
+}
+.fline1{
+    padding-top: 1em;
+}
+.fline2 p , .fline3 p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+.fline3 p{
+    margin-top: -0.5em;
+}
+.fline2 p a{
+    color: rgb(255 205 206);
+    text-decoration: none;
+}
